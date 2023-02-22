@@ -11,11 +11,15 @@ const App = () => {
       id: persons.length + 1,
     };
 
-    setPersons(persons.concat(nameObject));
-    setNewName("");
+    const nameExists = persons.some((person) => person.name === newName);
+    if (nameExists) {
+      alert(`${newName} is already in the phone book`);
+    } else {
+      setPersons(persons.concat(nameObject));
+      setNewName("");
+    }
   };
   const handleNameChange = (event) => {
-    console.log(event.target.value);
     setNewName(event.target.value);
   };
 
