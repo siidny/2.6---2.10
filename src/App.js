@@ -63,13 +63,6 @@ const App = () => {
           </li>
         ))}
       </ul>
-      <svg width="300" height="300" viewBox="-100 -100 200 200">
-        <circle cx="-50" cy="0" r="40" fill="blue" />
-        <circle cx="50" cy="0" r="40" fill="red" />
-        <circle cx="0" cy="0" r="40" fill="grey" />
-        <circle cx="-25" cy="45" r="40" fill="yellow" />
-        <circle cx="25" cy="45" r="40" fill="green" />
-      </svg>
     </div>
   );
 };
